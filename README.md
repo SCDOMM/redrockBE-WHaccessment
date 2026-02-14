@@ -77,12 +77,18 @@ service层专门处理业务逻辑，比如判断前后端的值是不是空值�
 
 ## 五.本地运行指南
 ### 1.俺寻思之力运行法
+（推荐，毕竟已经有app可以用了）  
 如果想要测试它，你需要在main.go文件里弄一个你喜欢的端口数字，其他的不需要修改，然后添加init_dao.go里的测试函数到main.go里。
 （测试账号的密码统一为123456）
 随后，打开你的手机热点，将电脑连接该热点，运行main.go即可。
 之后的测试就要看app的功劳了，你需要修改app使用的host，将其修改为你手机热点的IPV4地址，就可以正常运行了。
-### 2.部署到Docker，Linux服务器
+### 2.AI写的Postman测试
+（出bug本人概不负责）  
+
+https://a977628-4731127.postman.co/workspace/SCDOMM's-Workspace~9700a7be-dc73-4ad1-8c5a-09f0fdbcaca4/collection/50290426-4ae5745e-217e-4fca-83c7-03557ce3782b?action=share&source=copy-link&creator=50290426
+
+### 3.部署到Docker，Linux服务器
 我还没学，没法写
     
 ## 六.API文档
-困死了，明天再写
+目录下有
