@@ -76,7 +76,7 @@ func ChatAddTestData() {
 	fmt.Println("测试数据添加完成！")
 }
 func ReversoAddTestData() {
-	hashPass, err := pkg.GeneratePassword("123456", 10)
+	hashPass, err := pkg.GeneratePassword("123456789", 10)
 	if err != nil {
 		log.Println("测试数据添加失败!" + err.Error())
 		return

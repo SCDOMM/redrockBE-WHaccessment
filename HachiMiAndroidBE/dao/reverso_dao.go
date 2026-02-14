@@ -104,7 +104,6 @@ func ChangeProfileHandler(changeProfileDto model.ChangeProfileDTO) error {
 	} else if errCode == 0 {
 		return pkg.ErrAccNotFound
 	}
-
 	result := dataBase.Model(&model.UserModel{}).Where("account = ?", changeProfileDto.Account).Updates(&model.UserModel{
 		UserName:     changeProfileDto.Name,
 		ProfileImage: changeProfileDto.ProfileImage,

@@ -5,6 +5,7 @@ import (
 	"ProjectAndroidTest/pkg"
 	"ProjectAndroidTest/service"
 	"context"
+	"fmt"
 
 	"github.com/cloudwego/hertz/pkg/app"
 )
@@ -39,6 +40,7 @@ func DeleteHomeHandler(ctx context.Context, c *app.RequestContext) {
 
 	var homeDto model.HomeDTO
 	err0 := c.BindJSON(&homeDto)
+	fmt.Println(homeDto)
 	if err0 != nil {
 		c.JSON(400, pkg.FinalResponse{
 			Status: "400",
